@@ -43,3 +43,67 @@ A cross join returns the Cartesian product of the two tables, meaning every row 
 
 ## Conclusion:
 Joins are an essential tool in SQL, allowing for complex queries across multiple tables. Understanding the different types of joins and their applications ensures that you can retrieve data efficiently and effectively, catering to various data analysis requirements.
+
+
+# Quiz Questions:
+
+### Theory Question:
+In which type of join would you retrieve all records from both tables, including those that don't have a counterpart in the other table?
+- a) Inner Join
+- b) Left Join
+- c) Right Join
+- d) Full Outer Join
+
+### Scenario-Based:
+If you have a table `authors` and another table `books`, and you want to list all authors, including those who haven't written any book, which join would you use?
+- a) Self Join
+- b) Cross Join
+- c) Left Join (with `authors` as the left table)
+- d) Right Join (with `books` as the right table)
+
+### True or False:
+A Right Join retrieves all rows from the right table and only the matched rows from the left table.
+
+### Application Question:
+Which type of join would you use if you want to show the hierarchy within an `employees` table, where one employee can report to another?
+- a) Cross Join
+- b) Self Join
+- c) Inner Join
+- d) Full Outer Join
+
+### Theory Question:
+Which type of join results in the Cartesian product of the two tables?
+- a) Inner Join
+- b) Left Join
+- c) Cross Join
+- d) Self Join
+
+### Scenario-Based:
+If you want to retrieve data that only exists in both tables, ensuring there are no NULL values in the columns from either table in the result, which join would you use?
+- a) Left Join
+- b) Right Join
+- c) Inner Join
+- d) Full Outer Join
+
+# SQL Join Questions:
+
+1. Given two tables, `students` and `courses`, write an SQL statement to list all students and the courses they're enrolled in, even if they're not enrolled in any course.
+
+2. Consider a table named `employees` with a self-referencing column `manager_id`. Write an SQL statement to list all employees alongside the names of their respective managers.
+
+3. An `orders` table exists with columns for order details and a `customer_id`. Another table, `customers`, contains customer details. Write an SQL query to retrieve all customer names, even if they haven't placed any orders.
+
+4. The table `projects` lists all ongoing projects, and another table `team_members` lists employees assigned to each project by `project_id`. If you want a list of all projects and their team members (if any), which SQL statement would you write?
+
+5. You spot the following SQL query in a colleague's code:
+```sql
+SELECT products.name, suppliers.name
+FROM products
+RIGHT JOIN suppliers ON products.supplier_id = suppliers.id;
+```
+
+6. What will this query retrieve and how could it be modified to retrieve all products, even if they don't have a supplier?
+
+7. Write an SQL statement that retrieves the combination of every product with every category from the products and categories tables respectively.
+
+
