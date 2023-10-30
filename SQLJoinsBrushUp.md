@@ -45,7 +45,7 @@ A cross join returns the Cartesian product of the two tables, meaning every row 
 Joins are an essential tool in SQL, allowing for complex queries across multiple tables. Understanding the different types of joins and their applications ensures that you can retrieve data efficiently and effectively, catering to various data analysis requirements.
 
 
-# Quiz Questions:
+# Multiple Choice Quiz Questions:
 
 ### Theory Question:
 In which type of join would you retrieve all records from both tables, including those that don't have a counterpart in the other table?
@@ -85,7 +85,7 @@ If you want to retrieve data that only exists in both tables, ensuring there are
 - c) Inner Join
 - d) Full Outer Join
 
-# SQL Join Questions:
+# SQL Code Based Questions:
 
 1. Given two tables, `students` and `courses`, write an SQL statement to list all students and the courses they're enrolled in, even if they're not enrolled in any course.
 
